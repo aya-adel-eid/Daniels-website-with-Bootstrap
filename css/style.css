@@ -1,10 +1,17 @@
+
 :root {
   --main-color: #343434;
   --main-fontheader: Montserrat, sans-serif;
   --main-font: Poppins, sans-serif;
 }
+html
+,body
+{
+  overflow-x: hidden;
+}
 *{
     scroll-behavior: smooth;
+  
 }
 html{
     scroll-padding-top: 50px;
@@ -289,7 +296,7 @@ background-color: #fff;
   background-color: #e9e9e9;
   height: 1.8rem;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .about .button .btn-one,
 .contact form button {
@@ -373,15 +380,31 @@ background-color: #fff;
   font-size: 18px;
   font-weight: 800;
 }
-.Services .my-card span i,
-.contact .item span i {
+.contact .item span i{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(50%);
+}
+.contact .item span  {
+  margin: auto;
+  display: block;
+  width: 50px;
+  height: 50px;
+   border-radius: 50%;
+  background-color: #f4f4f4;
+  transition: background-color 0.8s, color 0.8s;
+}
+.Services .my-card span i
+{
   padding: 20px 18px;
   border-radius: 50%;
   background-color: #f4f4f4;
   transition: background-color 0.8s, color 0.8s;
 }
 .Services .my-card:hover i,
-.contact .item:hover i {
+.contact .item:hover span {
   background-color: #1c1c1c;
   color: #fff;
 }
@@ -390,7 +413,7 @@ background-color: #fff;
 .Portfolio .layer h6 {
   font-size: 14px;
   font-weight: 700;
-  transform: translateY(-15px);
+  transform: translateY(-20px);
   transition: transform 0.8s;
 }
 .Portfolio .item .layer .icons {
@@ -409,10 +432,10 @@ background-color: #fff;
   transition: transform 0.8s, opacity 0.8s;
 }
 .Portfolio .item:hover h6 {
-  transform: translateY(-5px);
+  transform: translateY(0px);
 }
 .Portfolio .item:hover .icons {
-  transform: translateY(-11px);
+  transform: translateY(0px);
 }
 .Portfolio .item:hover .layer {
   opacity: 1;
@@ -436,6 +459,20 @@ background-color: #fff;
   background-color: #222222;
   bottom: 15%;
   left: 0;
+}
+
+.Portfolio .item .icons span i{
+  padding: 7px 6px;
+  background-color: #1c1c1c;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 10px;
+  transition:  background-color 0.5s,color 0.5s ;
+  border: 0.5px solid black;
+}
+.Portfolio .item .icons span:hover i{
+  color: #1c1c1c;
+ background-color: #fff;
 }
 /***** End  protfolio *****/
 

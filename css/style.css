@@ -325,12 +325,13 @@ background-color: #fff;
 }
 
 .about .imge::after {
+  
   content: "";
   width: 80%;
   height: 80%;
   position: absolute;
-  left: -30px;
-  bottom: -30px;
+  left: 0 ;
+  bottom: -1.875rem;
   z-index: -1;
   background-image: url(../imgs/dots.png);
   background-repeat: repeat;

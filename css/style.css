@@ -4,17 +4,18 @@
   --main-fontheader: Montserrat, sans-serif;
   --main-font: Poppins, sans-serif;
 }
-html
-,body
-{
-  overflow-x: hidden;
+body,html{
+   overflow-x: hidden;
 }
+
 *{
     scroll-behavior: smooth;
   
 }
-html{
+html
+{
     scroll-padding-top: 50px;
+   
 }
 ul {
   list-style: none;
@@ -91,6 +92,7 @@ background-color: #fff;
     url(../imgs/bg.jpg);
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
 }
 .home .content .typiNg::after {
   content: "|";
@@ -290,6 +292,9 @@ background-color: #fff;
 .home .icon-social ul li a {
   color: inherit;
 }
+/* .home .icon-social  {
+  width: 400px;
+} */
 /***** End Section header *****/
 /***** Section about *****/
 .progress {
@@ -329,6 +334,9 @@ background-color: #fff;
   z-index: -1;
   background-image: url(../imgs/dots.png);
   background-repeat: repeat;
+}
+.about .my-skills .my-progress{
+  box-shadow: inset 0 5px 4px rgba(0, 0, 0, 0.19);
 }
 
 /***** End Section about *****/
@@ -462,7 +470,7 @@ background-color: #fff;
 }
 
 .Portfolio .item .icons span i{
-  padding: 7px 6px;
+  padding: 9px 8px;
   background-color: #1c1c1c;
   border-radius: 50%;
   color: #fff;
@@ -561,7 +569,7 @@ background-color: #fff;
      margin: 0 12px;
     
 }
-.team .my-item:hover img{
+.team .img:hover img{
     transform: scale(1.2);
 }
 .team .my-item:hover .scocial-icon{
@@ -628,6 +636,9 @@ background-color: #fff;
     width: 250px;
     margin: auto;
     white-space: wrap;
+}
+.form-control{
+  padding: 0.9rem 0.75rem;
 }
 
 /***** End Section Contact *****/

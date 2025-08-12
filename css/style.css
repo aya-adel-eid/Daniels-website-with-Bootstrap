@@ -4,13 +4,14 @@
   --main-fontheader: Montserrat, sans-serif;
   --main-font: Poppins, sans-serif;
 }
-body,html{
+/* body,html{
    overflow-x: hidden;
-}
+} */
 
 *{
     scroll-behavior: smooth;
   
+
 }
 html
 {
@@ -285,16 +286,14 @@ background-color: #fff;
 }
 .home .icon-social ul li {
   margin-right: 20px;
-  background-color: rgba(0, 0, 0, 0.156);
+  background-color: rgba(0, 0, 0, 0.308);
   border-radius: 50%;
   padding: 4px 10px;
 }
 .home .icon-social ul li a {
   color: inherit;
 }
-/* .home .icon-social  {
-  width: 400px;
-} */
+
 /***** End Section header *****/
 /***** Section about *****/
 .progress {
@@ -540,15 +539,7 @@ background-color: #fff;
 /***** End Section Counter *****/
 
 /***** Sectioour team *****/
-/* .team .img .scocial-icon ul li{
-   margin: 0 12px;
-  
-} */
- /* .team .img .scocial-icon ul li{
-   margin: 0 ;
-   transform: translateX(-35%);
-  
-} */
+
 .team .img img{
     transition: transform 0.6s;
 }
